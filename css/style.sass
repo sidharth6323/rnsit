@@ -1,0 +1,177 @@
+@import 'https://fonts.googleapis.com/css?family=Abel|Josefin+Sans|Ubuntu+Condensed'
+
+html
+  margin: 0
+  font-family: 'Josefin Sans', sans-serif
+  padding: 0
+  overflow-x: hidden
+
+header
+  height: 100vh
+  font-family: 'Josefin Sans', sans-serif
+  background:
+    attachment: fixed
+    size: cover
+    color: rgba(255, 0, 0, 0.25)
+    image: url('../images/jumbo-pic.JPG')
+    repeat: no-repeat
+    background-blend-mode: darken
+  nav
+    background-color: transparent
+    #top-social
+      li:hover
+        background-color: black !important
+    ul
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      padding: 2vh 5vw
+      width: 100%
+      position: absolute
+      li
+        list-style: none
+        margin: 5px 10px
+        font-size: 18px
+        white-space: nowrap
+        a
+          white-space: nowrap
+          color: white
+          text-decoration: none !important
+          transition: all .3s ease-in-out
+          &:hover
+            color: white
+            background-color: black
+            padding: 1em
+            border-top: px solid white
+            border-bottom: 8px solid white
+            min-width: 100px
+
+      #rnsit-logo
+        float: left!important
+        background:
+          image: url('../images/logo.png')
+          size: contain
+          position: center
+          repeat: no-repeat
+        height: 100px
+        width: 100px
+        transition:all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        &:hover
+          background-color: transparent
+          transform:scale(1.1)
+      #name
+        margin-right: auto
+        color: white
+
+
+#splash-screen
+  color: #c6c6c6
+  background-color: transparentize(black, .5)
+  font-family: 'Josefin Sans', sans-serif
+  height: 100%
+  font-size: 1.5em
+  .row
+    display: flex
+    justify-content: space-between
+    height: 100%
+    align-items: center
+    .col-md-8
+      padding-left: 10vw !important
+      h1
+        display: block
+        font-size: 152px
+        transition: 1s all ease
+        padding: 0
+        margin-bottom: -30px
+      &:hover
+        translate: scale(1.1)
+    #notice-board
+      padding-right: 0px !important
+      ul
+        li
+          list-style: none
+          color: #212121
+          margin-bottom: 10px
+          font-size: 18px
+          display: block
+          background-color: white
+          padding: .5em .1em .5em 1.8em
+          box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75)
+          transition: .1s all ease
+          transform-origin: right
+          &:hover
+            transform: scale(1.1)
+#description
+  padding: 3em 0
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 21px
+  z-index:4
+#stats
+  min-height: 300px
+  box-shadow:inset 0px 0px 37px -5px rgba(0,0,0,0.75)
+  background:
+    color: #e3e3e3
+  z-index:2
+
+.heading
+  font-size: 44px
+  margin-top: 0
+  margin-bottom: 0px !important
+#creds
+  padding: 10vh 0px 15vh 0px
+  background-color: #f5f5f5
+  font-family: 'Josefin Sans', sans-serif
+  #hr1
+    width: 10%
+    border-top: 4px solid black
+    margin-bottom: 10vh
+    margin-top: 10px
+    border-radius: 2em
+  .row
+    .col-md-3
+      height: 200px
+      background:
+        repeat: no-repeat
+        postion: center
+        size: contain
+#reach-us
+  font-family: 'Josefin Sans', sans-serif
+  font-size: 1.4em
+  padding-left: 3em
+  .col-md-6
+    .container
+      padding: 1em 2em
+      h3
+        border: 1px solid black
+        display: inline-block
+        padding: .5em 1.5em
+        margin: .5em
+        margin-bottom: 1em
+        font-weight: bold
+      #address-wrap
+        padding-left: 1em
+        a
+          display: inline-block
+          text-decoration: none
+          background-color: black
+          color: white
+          padding: .3em 1em
+          margin: 20px 0px
+        #gmap
+         background-color: #f5f5f5
+
+footer
+  background-color: black
+  margin: 0 !important
+  ul
+    display: flex
+    justify-content: center
+    margin: 0
+    li
+      margin: 20px 10px
+      list-style: none
+      min-width: 100px
+      text-align: center
+      a
+        color: white !important
+        
